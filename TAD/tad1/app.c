@@ -2,8 +2,12 @@
 #include <stdio.h>
 
 int main() {
-    FloatVector *vec = create(10);
-    printf("Hello!");
+    FloatVector *vec = create(2);
+    print(vec);
+    append(vec, 0.0);
+    append(vec, 1.0);
+    print(vec);
+    append(vec, 2.0);
     destroy(&vec);
     return 0;
 }

@@ -10,6 +10,9 @@ void add_last_slow(List *L, int val);
 void add_last_fast(List *L, int val);
 Node *node_create(int val);
 List *list_create();
+void list_destroy(List **L_ref);
+int length(List *L);
 void list_remove(List *L, int val);
+void list_remove_fast(List *L, int val);
 void print_list(const List *L);
 
